@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candy Factory Group</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="foreground screen">
+        <div class="foreground-layer zero"></div>
+        <div class="foreground-layer one" id="layerOne">
+          <div class="foreground-layer tent-spark"></div>
+        </div>
+        <div class="foreground-layer two">
+          <div class="foreground-layer tent-cyber"></div>
+        </div>
+        <div class="foreground-layer three">
+          <img
+            src="./assets/img/bw-concepts-tent.png"
+            alt=""
+            class="tent-concepts-grayscale"
+          />
+
+          <img
+            src="./assets/img/concept-tent-color.png"
+            alt=""
+            class="tent-concepts-color"
+          />
+        </div>
+        <div class="foreground-layer four">
+          <div class="foreground-layer tent-films"></div>
+        </div>
+        <div class="layer-grayscale layer-main-tent">
+          <div class="foreground-layer five-color opacity"></div>
+          <img
+            src="./assets/img/bw-main-tent.png"
+            alt=""
+            class="tent-main-grayscale"
+          />
+          <img
+            src="./assets/other-resources/tent-main.gif"
+            alt=""
+            class="tent-main-color"
+          />
+        </div>
+      </div>
+      <div class="foreground-mobile">
+
+      </div>
+      <div class="section-about">
+        <div class="container mr-2 ml-2">
+          <div class="row mb-3 hr-bottom">
+            <div class="col-sm-7">
+              <section class="section br-2">
+                <h2>Who we are</h2>
+                <h4>Reach the unreachable</h4>
+                <p id="about">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis, optio dolorem quisquam voluptas quibusdam officia
+                  impedit libero sit obcaecati blanditiis voluptates, aliquam
+                  soluta et corrupti. Consequatur blanditiis ad exercitationem
+                  enim!
+                </p>
+              </section>
+            </div>
+            <div class="col-sm-5 layout-4">
+              <img
+                src="./assets/other-resources/joker-cartoon.png"
+                alt="About image"
+                class="img-lazyload img-behind"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row-outflow img-overlay mb-3">
+          <div class="col-sm-12">
+            <div class="text-center">
+              <p id="firstPara">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+                amet repudiandae dignissimos consequatur"
+                <br />
+                "Atque incidunt modi, velit quisquam corrupti enim quae vel
+                ipsum repudiandae quo reiciendis maiores."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-companies">
+        <section class="cf-project-preview cyber-lab">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 block-sm">
+                <img src="./assets/other-resources/cyberlab text.png" alt="" />
+                <p class="subtitle">mobile & web application / VR / Games</p>
+                <p class="text-block">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Pariatur aperiam perspiciatis sapiente dignissimos
+                  necessitatibus, molestias assumenda provident iste repellat
+                  at, architecto veritatis facere quia eius consequuntur
+                  consequatur sint? Consectetur, quis.
+                </p>
+                <article class="position-custom">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cf-sm btn-cyber-link"
+                  >
+                    Explore
+                  </a>
+                </article>
+              </div>
+              <div class="col-sm-8">
+                <div class="w-video">
+                  <video playsinline loop muted autoplay>
+                    <source
+                      src="./assets/other-resources/cyber-sample.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <!-- <img
+                    src="./assets/other-resources/CB.png"
+                    alt="bottom-img"
+                    class="img-responsive"
+                  /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cf-project-preview films">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 block-sm">
+                <img
+                  src="./assets/other-resources/films-logo.png"
+                  alt="films"
+                />
+                <p class="subtitle">product photography / videography</p>
+                <p class="text-block">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Pariatur aperiam perspiciatis sapiente dignissimos
+                  necessitatibus, molestias assumenda provident iste repellat
+                  at, architecto veritatis facere quia eius consequuntur
+                  consequatur sint? Consectetur, quis.
+                </p>
+                <article class="position-custom">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cf-sm btn-cyber-link"
+                  >
+                    Explore
+                  </a>
+                </article>
+              </div>
+              <div class="col-sm-8">
+                <div class="w-video">
+                  <video playsinline loop muted autoplay>
+                    <source
+                      src="./assets/other-resources/AI.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <!-- <img
+                    src="./assets/other-resources/CB.png"
+                    alt="bottom-img"
+                    class="img-responsive-films"
+                  /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cf-project-preview spark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 block-sm">
+                <img
+                  src="./assets/other-resources/spark-logo.png"
+                  alt="spark"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Pariatur aperiam perspiciatis sapiente dignissimos
+                  necessitatibus, molestias assumenda provident iste repellat
+                  at, architecto veritatis facere quia eius consequuntur
+                  consequatur sint? Consectetur, quis.
+                </p>
+                <article class="position-custom">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cf-sm btn-cyber-link"
+                  >
+                    Explore
+                  </a>
+                </article>
+              </div>
+              <div class="col-sm-8">
+                <div class="w-video">
+                  <video playsinline loop muted autoplay>
+                    <source
+                      src="./assets/other-resources/spark-sample.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <!-- <img
+                    src="./assets/other-resources/CB.png"
+                    alt="bottom-img"
+                    class="img-responsive-films"
+                  /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cf-project-preview concepts">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 block-sm">
+                <img
+                  src="./assets/other-resources/concepts-logo.png"
+                  alt="concepts"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Pariatur aperiam perspiciatis sapiente dignissimos
+                  necessitatibus, molestias assumenda provident iste repellat
+                  at, architecto veritatis facere quia eius consequuntur
+                  consequatur sint? Consectetur, quis.
+                </p>
+                <article class="position-custom">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cf-sm btn-cyber-link"
+                  >
+                    Explore
+                  </a>
+                </article>
+              </div>
+              <div class="col-sm-8">
+                <div class="w-video">
+                  <video playsinline loop muted autoplay>
+                    <source
+                      src="./assets/other-resources/concepts-sample.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <!-- <img
+                    src="./assets/other-resources/CB.png"
+                    alt="bottom-img"
+                    class="img-responsive-films"
+                  /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="whitespace"></div>
+      <section class="cf-clients-preview overlay">
+        <div class="row">
+          <div class="btn-overlay">
+            <p>our clients</p>
+          </div>
+          <div class="cf-grid">
+            <div class="grid-item">
+              <img
+                src="./assets/other-resources/hemas-group.jpg"
+                alt=""
+                class="client-one client-img-base-cls"
+              />
+            </div>
+            <div class="grid-item">
+              <img
+                src="./assets/other-resources/prasara.png"
+                alt=""
+                class="client-two client-img-base-cls"
+              />
+            </div>
+            <div class="grid-item client-three">
+              <img
+                src="./assets/other-resources/vivya.png"
+                alt=""
+                class="client-img-base-cls"
+              />
+            </div>
+            <div class="grid-item client-four">
+              <img
+                src="./assets/other-resources/dandex.jpg"
+                alt=""
+                class="client-img-base-cls"
+              />
+            </div>
+            <div class="grid-item client-five">
+              <img
+                src="./assets/other-resources/fontera.jpg"
+                alt=""
+                class="client-five client-img-base-cls"
+              />
+            </div>
+            <div class="grid-item client-six">
+              <img
+                src="./assets/other-resources/anchor.png"
+                alt=""
+                class="client-img-base-cls"
+              />
+            </div>
+            <div class="grid-item col-span">
+              <img
+                src="./assets/other-resources/dfsk.png"
+                alt=""
+                class="client-seven client-img-base-cls"
+              />
+            </div>
+            <div class="grid-item client-eight">
+              <img
+                src="./assets/other-resources/nasiol.png"
+                alt=""
+                class="client-eight client-img-base-cls"
+              />
+            </div>
+            <div class="grid-item client-nine">
+              <img
+                src="./assets/other-resources/ruhunu-foods.png"
+                alt=""
+                class="client-nine client-img-base-cls"
+              />
+            </div>
+            <div class="grid-item client-ten">
+              <img
+                src="./assets/other-resources/uml.png"
+                alt=""
+                class="client-img-base-cls"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="footer">
+      <div class="row mx-4">
+        <div class="col-sm-4 sum-profile br-1">
+          <img
+            src="./assets/other-resources/CF-Logo.png"
+            alt="logo candy factory"
+          />
+          <h2>Candy factory group</h2>
+          <h5>info@candyfactorygroup.com</h5>
+          <div class="links">
+            <ul>
+              <li>
+                <a class="social-link" href="#">linkdin</a>
+              </li>
+              <li>
+                <a class="social-link" href="#">facebook</a>
+              </li>
+              <li>
+                <a class="social-link" href="#">behance</a>
+              </li>
+              <li>
+                <a class="social-link" href="#">instergram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="trademark">
+            © Candy factory group. All Rights Reserved.
+          </div>
+        </div>
+        <div class="col-sm-4 sum-profile br-1 flex-1">
+          <ul class="home-links">
+            <li>
+              <a href="#home" class="footer-home-links">home</a>
+            </li>
+            <li>
+              <a href="#home" class="footer-home-links">companies</a>
+            </li>
+            <li>
+              <a href="#home" class="footer-home-links">contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+      integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
